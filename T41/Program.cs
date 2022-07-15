@@ -11,26 +11,26 @@ void GetAndCountNumbers(string message)
     int result = 0;
     int count = 0;
     Console.WriteLine(message);
-    while(true)
+    while (true)
     {
-       
 
-        if(int.TryParse(Console.ReadLine(), out result))
-           {
-            if (result>0)
+
+        if (int.TryParse(Console.ReadLine(), out result))
+        {
+            if (result > 0)
             {
                 count++;
             }
             Console.WriteLine("Введите еще число или нажмите любую клавишу");
-            }
-           
+        }
+
         else
         {
             Console.WriteLine($"Количество введенных чисел больше 0: {count} ");
             break;
         }
     }
-    
+
 }
 
 GetAndCountNumbers("Введите число:");
